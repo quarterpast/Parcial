@@ -1,12 +1,12 @@
 Symbol = require \es6-symbol
 
-partial = (id)->
+module.exports = function partial id
 	sym = Symbol id
 	fns = {}
 
 	(sym): (x, ...args)->
 		if fns[x]?
-			that.apply this, ...args
+			that.apply this, args
 		else ...
 	(id):~ -> @[sym]
 	(id):~ (fn)->
