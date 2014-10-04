@@ -1,6 +1,9 @@
-<p align="center">
-# Parcial <br>![Build Status](https://travis-ci.org/quarterto/Parcial.svg)](https://travis-ci.org/quarterto/Parcial)
-</p>
+<h1 align="center">
+Parcial
+<br>
+<a href="https://travis-ci.org/quarterto/Parcial"><img alt="Build Status" src="https://travis-ci.org/quarterto/Parcial.svg"></a>
+</h1>
+
 
 Tagged partial methods, like:
 
