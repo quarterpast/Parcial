@@ -20,6 +20,10 @@ a.b = {tag: function() { return "you got me" }};
 a.b('tag'); //⇒ "you got me"
 ```
 
+## api
+#### `parcial(name, options = {strict: true})`
+Returns an object with a getter and setter for the method `name`. If `options.strict` is false, the method does not throw an exception if it encounters a tag it doesn't know about.
+
 ## why
 
 Parcial works great with mixins. No need to do a deep merge; just use partials:
