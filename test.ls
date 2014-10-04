@@ -39,4 +39,6 @@ export Parcial:
 		a = partial \a
 		a.a = a: ->
 		expect (-> a.a \b) .to.throw-error /unimplemented/
-
+	'should not throw if options.strict is false':->
+		a = partial \a {-strict}
+		expect (-> a.a '') .not.to.throw-error!
